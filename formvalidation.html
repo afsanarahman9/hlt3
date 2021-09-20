@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form validation</title>
+    <script src="formvadd.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <hr />
+    <h1>APPLICATION FORM</h1>
+    
+    <form>
+      <label>Full name</label>
+      <input
+        type="text"
+        value=""
+        name="uname"
+        id="t1"
+        placeholder="full Name" onblur="changeBack(this)"
+      />
+      <br /><br>
+      <label>email</label>
+      <input type="text" value="" name="email" id="t2" placeholder="email" onblur="changeBack(this)"/>
+      <br /><br>
+      <form>
+        <label>Mobile Number</label>
+        <input
+          type="number"
+          value=""
+          name="no"
+          id="t3"
+          placeholder="Mobile number" onblur="changeBack(this)"
+        />
+        <br />
+        <label>Country</label>
+        <br>
+        <Select  onblur="changeBack(this)">
+          <option value="">Please Select Country</option>
+          <option value="India">INDIA</option>
+          <option value="uk">UK</option>
+          <option value="usa">USA</option>
+          <option value="dubai">DUBAI</option>
+      
+        </Select>
+        <br><br>
+        <label>Gender</label>
+        <br>
+        Male<input type="radio"name="g1">Female<input type="radio"name="g1">
+        <br><br>
+        <label>Hobbies(optional)</label><br>
+        <input type="checkbox"/>Sports <input type="checkbox"/>Movies<input type="checkbox"/>Music
+        <br>
+        <br>
+        <input  type="submit" value"Submit"/>
+      <p id="msg" style="color: red"></p>
+      <br />
+      
+    </form>
+
+
+    <p id="err" style="color: red"></p>
+  </body>
+</html>
